@@ -33,29 +33,18 @@
     "logo": "https://placehold.co/100x50/1A1A1A/D4A017?text=Livetter",
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     "description": "Especialistas en la venta de casas y departamentos en Toluca, Metepec y Valle de Toluca. Ofrecemos asesoría en créditos hipotecarios e Infonavit en el Estado de México.",
-    "telephone": "+527221234567", <!-- MODIFY HERE: Update telephone number if needed -->
-    "email": "contacto@livetterinmuebles.com", <!-- MODIFY HERE: Update email if needed -->
-    "priceRange": "$$$",
+    "telephone": "+527221234567", "email": "contacto@livetterinmuebles.com", "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Av. Principal #123", <!-- MODIFY HERE: Update street address if needed -->
-      "addressLocality": "Toluca", <!-- MODIFY HERE: Update locality if needed -->
-      "addressRegion": "México",
-      "postalCode": "50000", <!-- MODIFY HERE: Update postal code if needed -->
-      "addressCountry": "MX"
+      "streetAddress": "Av. Principal #123", "addressLocality": "Toluca", "addressRegion": "México",
+      "postalCode": "50000", "addressCountry": "MX"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "19.2896", <!-- MODIFY HERE: Update latitude if needed -->
-      "longitude": "-99.6557" <!-- MODIFY HERE: Update longitude if needed -->
-    },
+      "latitude": "19.2896", "longitude": "-99.6557" },
     "areaServed": ["Toluca", "Metepec", "Valle de Toluca", "Estado de México"],
-    "hasMap": "https://www.google.com/maps/place/Tu+Oficina+en+Toluca", <!-- MODIFY HERE: Update map link if needed -->
-    "sameAs": [
-      "https://www.facebook.com/LivetterInmuebles", <!-- MODIFY HERE: Update social media links if needed -->
-      "https://www.instagram.com/LivetterInmuebles", <!-- MODIFY HERE: Update social media links if needed -->
-      "https://www.linkedin.com/company/livetterinmuebles" <!-- MODIFY HERE: Update social media links if needed -->
-    ]
+    "hasMap": "https://www.google.com/maps/place/Tu+Oficina+en+Toluca", "sameAs": [
+      "https://www.facebook.com/LivetterInmuebles", "https://www.instagram.com/LivetterInmuebles", "https://www.linkedin.com/company/livetterinmuebles" ]
   }
   </script>
 
@@ -124,8 +113,7 @@
 </head>
 <body class="font-sans text-white bg-gray-900">
 
-  <!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/527296661329?text=Quiero%20información%20sobre%20casas%20en%20Toluca%20y%20Valle%20de%20Toluca"
+  <a href="https://wa.me/527296661329?text=Quiero%20información%20sobre%20casas%20en%20Toluca%20y%20Valle%20de%20Toluca"
    target="_blank"
    class="fixed bottom-6 right-6 bg-[#25D366] text-white py-2 px-4 rounded-full shadow-lg hover:bg-[#128C7E] transition duration-300 transform hover:scale-105 z-50 flex items-center justify-center space-x-1.5 font-semibold text-sm"
    aria-label="Contactar por WhatsApp para información sobre casas en Toluca y Valle de Toluca">
@@ -135,7 +123,6 @@
   WhatsApp
 </a>
 
-  <!-- Encabezado -->
   <header class="bg-[#1A1A1A] text-white py-6 sticky top-0 shadow-md z-40">
     <div class="container mx-auto flex justify-between items-center px-6">
       <h1 class="text-2xl lg:text-3xl font-bold text-[#D4A017]">Livetter Inmuebles</h1>
@@ -150,10 +137,8 @@
     </div>
   </header>
 
-  <!-- Contenido Principal -->
   <main>
-    <!-- Sección Principal con Carrusel -->
-<section id="inicio" class="carousel text-center text-white relative overflow-hidden" aria-label="Carrusel de casas en venta en Toluca y Valle de Toluca">
+    <section id="inicio" class="carousel text-center text-white relative overflow-hidden" aria-label="Carrusel de casas en venta en Toluca y Valle de Toluca">
   <div class="carousel-item active bg-cover bg-center" style="background-image: url('/livetter.github.io/img/paramo.jpg'); height: 100vh;">
     <div class="bg-overlay py-20 w-full h-full flex items-center justify-center">
       <div class="container mx-auto px-6 max-w-4xl">
@@ -179,7 +164,6 @@
   <button id="toggle-carousel" class="absolute top-15 right-6 bg-[#333333] text-[#D4A017] p-2 rounded-full z-10" aria-label="Pausar o reanudar carrusel">⏯️</button>
 </section>
 
-    <!-- Filtros de Búsqueda -->
     <section class="py-12 bg-[#333333]" aria-labelledby="filter-heading">
       <div class="container mx-auto px-6">
         <h2 id="filter-heading" class="text-3xl md:text-4xl font-bold text-center mb-8 text-[#D4A017]">Encuentra tu Casa en el Valle de Toluca</h2>
@@ -195,9 +179,9 @@
           <select id="location-filter" class="p-3 border border-gray-600 rounded-lg bg-[#1A1A1A] text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-label="Filtrar casas por ubicación en Valle de Toluca">
             <option value="">Ubicación</option>
             <option value="metepec">Metepec</option>
-            <option value="la-asuncion">La Asunción</option>
-            <option value="zona-aeropuerto">Zona Aeropuerto</option>
-            <option value="san-mateo-atenco">Ocoyoacac</option>
+            <option value="la asuncion">La Asunción</option>
+            <option value="zona aeropuerto">Zona Aeropuerto</option>
+            <option value="ocoyoacac">Ocoyoacac</option>
             <option value="zinacantepec">Zinacantepec</option>
             <option value="toluca">Toluca</option>
           </select>
@@ -206,30 +190,28 @@
       </div>
     </section>
 
-    <!-- Propiedades Destacadas -->
     <section id="propiedades" class="py-20 bg-[#1A1A1A" aria-labelledby="properties-heading">
       <div class="container mx-auto px-6">
-        <h2 id="properties-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#D4A017]">Casas en Ocoyoacac</h2>
+        <h2 id="properties-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#D4A017]">Casas en Venta en el Valle de Toluca</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <article class="bg-[#333333] rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
             <img src="/livetter.github.io/img/paramo.jpg"
                  alt="Casa moderna en venta en Zona Ocoyoacac, Valle de Toluca"
                  class="w-full h-64 object-cover" loading="lazy">
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Paramo Residencial</h3>
-              <p class="text-gray-400 mb-2 text-sm">3 habitaciones, 2.5 baños, 119 m²</p> <!-- MODIFY HERE: Edit house characteristics (e.g., rooms, bathrooms, area) -->
-              <p class="text-white font-bold text-2xl mb-4">Desde $2,650,000</p> <!-- MODIFY HERE: Edit house price -->
+              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Paramo Residencial (Ocoyoacac)</h3>
+              <p class="text-gray-400 mb-2 text-sm">3 habitaciones, 2.5 baños, 119 m²</p>
+              <p class="text-white font-bold text-2xl mb-4">Desde $2,650,000</p>
               <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en Metepec, Valle de Toluca">Contactar</a>
             </div>
           </article>
           <article class="bg-[#333333] rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
-            <img src="/livetter.githbub.io/img/arona.jpeg"
-                 alt="Casa de lujo en venta en Zinacantepec, Toluca"
+            <img src="/livetter.github.io/img/arona.jpeg" alt="Casa de lujo en venta en Zinacantepec, Toluca"
                  class="w-full h-64 object-cover" loading="lazy">
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Casa en Zinacantepec</h3>
-              <p class="text-gray-400 mb-2 text-sm">3 hab, 2.5 baños, 120 m²</p> <!-- MODIFY HERE: Edit house characteristics (e.g., rooms, bathrooms, area) -->
-              <p class="text-white font-bold text-2xl mb-4">Desde $2,900,000</p> <!-- MODIFY HERE: Edit house price -->
+              <p class="text-gray-400 mb-2 text-sm">3 hab, 2.5 baños, 120 m²</p>
+              <p class="text-white font-bold text-2xl mb-4">Desde $2,900,000</p>
               <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en La Asunción, Toluca">Contactar</a>
             </div>
           </article>
@@ -238,27 +220,24 @@
                  alt="Casa premium en venta cerca de ocoyoacac"
                  class="w-full h-64 object-cover" loading="lazy">
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Casa cerca de santa Fe</h3>
-              <p class="text-gray-400 mb-2 text-sm">3 hab, 2.5 baños, Desde 123 m²</p> <!-- MODIFY HERE: Edit house characteristics (e.g., rooms, bathrooms, area) -->
-              <p class="text-white font-bold text-2xl mb-4">$3,980,000</p> <!-- MODIFY HERE: Edit house price -->
-              <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en Zona Aeropuerto, Toluca">Contactar</a>
+              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Casa cerca de Santa Fe (Ocoyoacac)</h3> <p class="text-gray-400 mb-2 text-sm">3 hab, 2.5 baños, Desde 123 m²</p>
+              <p class="text-white font-bold text-2xl mb-4">$3,980,000</p>
+              <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en Ocoyoacac, Toluca">Contactar</a>
             </div>
           </article>
            <article class="bg-[#333333] rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
-            <img src="/livetter.githbub.io/img/arona.jpeg"
-                 alt="Casa de lujo en venta en Zinacantepec, Toluca"
+            <img src="/livetter.github.io/img/arona.jpeg" alt="Casa en venta en Metepec, Valle de Toluca"
                  class="w-full h-64 object-cover" loading="lazy">
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Casa en Zinacantepec</h3>
-              <p class="text-gray-400 mb-2 text-sm">3 hab, 2.5 baños, 120 m²</p> <!-- MODIFY HERE: Edit house characteristics (e.g., rooms, bathrooms, area) -->
-              <p class="text-white font-bold text-2xl mb-4">Desde $2,900,000</p> <!-- MODIFY HERE: Edit house price -->
-              <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en La Asunción, Toluca">Contactar</a>
-            </div><!-- ADD HERE: Add new property article with similar structure (image, h3 for name, p for characteristics, p for price, a for contact) -->
+              <h3 class="text-xl font-semibold mb-2 text-[#D4A017]">Casa Nueva en Metepec</h3>
+              <p class="text-gray-400 mb-2 text-sm">4 hab, 3 baños, 150 m²</p>
+              <p class="text-white font-bold text-2xl mb-4">Desde $3,500,000</p>
+              <a href="#contacto" class="block bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg text-center hover:bg-[#B38600] transition duration-300 font-medium" aria-label="Contactar por casa en Metepec">Contactar</a>
+            </div>
         </div>
       </div>
     </section>
 
-    <!-- Simulador de Crédito -->
     <section class="py-20 bg-[#333333]" aria-labelledby="credit-simulator-heading">
       <div class="container mx-auto px-6 text-center">
         <h2 id="credit-simulator-heading" class="text-3xl md:text-4xl font-bold mb-6 text-[#D4A017]">Simula tu Crédito para Casas en Toluca</h2>
@@ -274,7 +253,6 @@
       </div>
     </section>
 
-    <!-- Sección de Contacto -->
     <section id="contacto" class="py-20 text-center bg-[#1A1A1A]" aria-labelledby="contact-heading">
       <div class="container mx-auto px-6">
         <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold mb-6 text-[#D4A017]">Contáctanos para Casas en Valle de Toluca</h2>
@@ -293,7 +271,6 @@
       </div>
     </section>
 
-    <!-- Sección de Contenido Local (SEO Boost) -->
     <section class="py-12 bg-[#1A1A1A] text-center">
       <div class="container mx-auto px-6">
         <h2 class="text-2xl md:text-3xl font-bold mb-4 text-[#D4A017]">Por qué Comprar una Casa en Valle de Toluca</h2>
@@ -302,15 +279,12 @@
     </section>
   </main>
 
-  <!-- Pie de Página -->
   <footer class="bg-[#1A1A1A] text-gray-400 py-8">
     <div class="container mx-auto px-6 text-center">
       <p class="mb-4 text-sm">© 2025 Livetter Inmuebles · Lujo Inmobiliario en Valle de Toluca</p>
-      <p class="text-sm">Tel: (729) 666 1329 | Email: contacto@livetterinmuebles.com</p> <!-- MODIFY HERE: Update contact details (phone, email) -->
-    </div>
+      <p class="text-sm">Tel: (729) 666 1329 | Email: contacto@livetterinmuebles.com</p> </div>
   </footer>
 
-  <!-- JavaScript -->
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-item');
@@ -383,16 +357,32 @@
       const properties = document.querySelectorAll('#propiedades article');
 
       properties.forEach(property => {
-        const price = parseFloat(property.querySelector('.text-2xl').textContent.replace(/[^0-9.]/g, ''));
-        const location = property.querySelector('h3').textContent.toLowerCase();
+        // Asumiendo que el precio siempre estará en el <p> con text-2xl
+        const priceText = property.querySelector('.text-2xl').textContent;
+        // Quita todo lo que no sea número o punto, y luego parsea
+        const priceMatch = priceText.match(/(\d[\d,]*\.?\d*)/); // Busca números con comas o puntos
+        const price = priceMatch ? parseFloat(priceMatch[0].replace(/,/g, '')) : 0; // Remueve comas antes de parsear
+
+        // Para la ubicación, busca en el texto del h3 de la propiedad
+        const propertyLocationText = property.querySelector('h3').textContent.toLowerCase();
 
         let show = true;
+
+        // Filtrar por precio
         if (priceFilter) {
-          if (priceFilter === 'less-2m' && price >= 2000000) show = false;
-          if (priceFilter === '2m-3m' && (price < 2000000 || price > 3000000)) show = false;
-          if (priceFilter === 'more-3m' && price <= 3000000) show = false;
+          if (priceFilter === 'less-2m' && price >= 2000000) {
+            show = false;
+          } else if (priceFilter === '2m-3m' && (price < 2000000 || price > 3000000)) {
+            show = false;
+          } else if (priceFilter === 'more-3m' && price < 3000000) {
+            show = false;
+          }
         }
-        if (locationFilter && !location.includes(locationFilter)) show = false;
+
+        // Filtrar por ubicación
+        if (locationFilter && !propertyLocationText.includes(locationFilter)) {
+          show = false;
+        }
 
         property.style.display = show ? 'block' : 'none';
       });
