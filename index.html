@@ -46,7 +46,7 @@
     "areaServed": ["Toluca", "Metepec", "Valle de Toluca", "Estado de México", "Zinacantepec", "Ocoyoacac"],
     "hasMap": "https://www.google.com/maps/place/Toluca,+M%C3%A9x./data=!4m2!3m1!1s0x85cd8bd4b9177a49:0x39a13a44d03e670c?sa=X&ved=1t:242&ictx=111", 
     "sameAs": [
-      "https://www.facebook.com/LivetterInmuebles",
+      "https://www.facebook.com/profile.php?id=61565285032907",
       "https://www.instagram.com/LivetterInmuebles",
       "https://www.linkedin.com/company/livetterinmuebles"
     ]
@@ -453,16 +453,16 @@
         <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold mb-6 text-[#D4A017]">Contáctanos para tu Próxima Casa en Valle de Toluca</h2>
         <p class="text-lg md:text-xl mb-8 text-gray-400 font-light">Agenda una visita personalizada para conocer nuestras propiedades en Toluca, Metepec, Zinacantepec y Ocoyoacac. Estamos listos para asesorarte.</p>
         <div class="max-w-lg mx-auto bg-[#333333] p-8 rounded-2xl shadow-xl">
-          <form id="contact-form" aria-label="Formulario de contacto para agendar visita a casas en Toluca">
+          <form id="contact-form" action="https://formspree.io/f/mgvyrbrj" method="POST" aria-label="Formulario de contacto para agendar visita a casas en Toluca">
             <label for="nombre" class="sr-only">Nombre</label>
-            <input type="text" id="nombre" placeholder="Nombre" class="w-full p-3 mb-4 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
+            <input type="text" id="nombre" name="Nombre" placeholder="Nombre" class="w-full p-3 mb-4 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
             <label for="email" class="sr-only">Correo</label>
-            <input type="email" id="email" placeholder="Correo" class="w-full p-3 mb-4 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
+            <input type="email" id="email" name="Correo" placeholder="Correo" class="w-full p-3 mb-4 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
             <label for="telefono" class="sr-only">Teléfono</label>
-            <input type="tel" id="telefono" placeholder="Teléfono" class="w-full p-3 mb-6 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
+            <input type="tel" id="telefono" name="Teléfono" placeholder="Teléfono" class="w-full p-3 mb-6 border border-gray-600 bg-[#1A1A1A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A017] transition duration-200 text-base" aria-required="true">
             <button type="submit" class="w-full bg-[#D4A017] text-[#1A1A1A] p-3 rounded-lg shadow-md hover:bg-[#B38600] transition duration-300 transform hover:scale-105 font-semibold text-lg">Solicitar Asesoría</button>
           </form>
-        </div>
+          </div>
       </div>
     </section>
 
@@ -622,7 +622,7 @@
       document.getElementById('calcular-credito').addEventListener('click', calcularCredito);
 
       document.getElementById('contact-form').addEventListener('submit', (e) => {
-        e.preventDefault();
+        // Validación del lado del cliente ANTES de que el formulario se envíe a Formspree
         const nombre = document.getElementById('nombre').value.trim();
         const email = document.getElementById('email').value.trim();
         const telefono = document.getElementById('telefono').value.trim();
@@ -630,14 +630,15 @@
         const telefonoRegex = /^\+?\d{10,12}$/;
 
         if (!nombre || !emailRegex.test(email) || !telefonoRegex.test(telefono)) {
+          e.preventDefault(); // Evita que el formulario se envíe a Formspree si la validación falla
           alert('Por favor, completa todos los campos correctamente.');
-          return;
+          return; // Detiene la ejecución de la función
         }
 
-        alert('Solicitud enviada con éxito. Pronto nos pondremos en contacto contigo.');
-        // Aquí podrías agregar el código para enviar el formulario a un servicio backend (ej. Formspree, Netlify Forms, etc.)
-        // o a una API de CRM.
-        document.getElementById('contact-form').reset(); // Limpiar el formulario
+        // Si la validación pasa, el formulario se enviará a la URL de Formspree
+        // Puedes agregar un mensaje de éxito si deseas, aunque Formspree redirigirá por defecto
+        // alert('Solicitud enviada con éxito. Pronto nos pondremos en contacto contigo.');
+        // document.getElementById('contact-form').reset(); 
       });
     });
   </script>
