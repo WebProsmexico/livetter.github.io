@@ -449,6 +449,7 @@
           <input type="number" id="plazo" placeholder="Plazo (años)" class="w-full p-3 mb-4 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base" aria-required="true" min="1" max="30">
           <button id="calcular-credito" class="w-full bg-[#8B7D6B] text-[#F5F5F5] p-3 rounded-lg shadow-md hover:bg-[#6B5E4C] transition duration-300 transform hover:scale-105 font-semibold text-base">Calcular</button>
           <div id="resultado" class="mt-6 text-[#2E2E2E] text-lg font-medium" aria-live="polite"></div>
+          <p id="disclaimer" class="mt-2 text-sm text-[#666666] italic">Con fines informativos únicamente, para obtener una respuesta definitiva es necesario realizarlo con una institución financiera.</p>
           <table id="payment-table" class="mt-4 w-full text-sm hidden">
             <thead>
               <tr>
@@ -530,19 +531,19 @@
       <div class="container mx-auto px-6">
         <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold mb-6 text-[#8B7D6B]">Contáctanos para tu Próxima Casa en Valle de Toluca</h2>
         <p class="text-lg md:text-xl mb-8 text-[#000000] font-light">Agenda una visita personalizada para conocer nuestras propiedades en Toluca, Metepec, Zinacantepec y Ocoyoacac. Estamos listos para asesorarte.</p>
-      <div class="max-w-lg mx-auto bg-[#E8E8E8] p-8 rounded-2xl shadow-xl">
-        <form id="contact-form" action="https://formspree.io/f/mgvyrbrj" method="POST" aria-label="Formulario de contacto para agendar visita a casas en Toluca">
-          <label for="nombre" class="sr-only">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="w-full p-3 mb-4 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base" required>
-          <label for="telefono" class="sr-only">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="w-full p-3 mb-4 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base" required>
-          <label for="email" class="sr-only">Correo (Opcional)</label>
-          <input type="email" id="email" name="_replyto" placeholder="Correo (Opcional)" class="w-full p-3 mb-6 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base">
-          <button type="submit" class="w-full bg-[#8B7D6B] text-[#F5F5F5] p-3 rounded-lg shadow-md hover:bg-[#6B5E4C] transition duration-300 transform hover:scale-105 font-semibold text-lg">Solicitar Asesoría</button>
-        </form>
-        <div id="form-success" class="mt-4 text-green-600 hidden">¡Gracias! Te contactaremos en breve.</div>
-        <div id="form-error" class="mt-4 text-red-600 hidden">Error al enviar. Por favor, intenta de nuevo.</div>
-      </div>
+        <div class="max-w-lg mx-auto bg-[#E8E8E8] p-8 rounded-2xl shadow-xl">
+          <form id="contact-form" action="https://formspree.io/f/mgvyrbrj" method="POST" aria-label="Formulario de contacto para agendar visita a casas en Toluca">
+            <label for="nombre" class="sr-only">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="w-full p-3 mb-4 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base" required>
+            <label for="telefono" class="sr-only">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="w-full p-3 mb-4 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base" required>
+            <label for="email" class="sr-only">Correo (Opcional)</label>
+            <input type="email" id="email" name="_replyto" placeholder="Correo (Opcional)" class="w-full p-3 mb-6 border border-[#666666] bg-[#F5F5F5] text-[#2E2E2E] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B7D6B] transition duration-200 text-base">
+            <button type="submit" class="w-full bg-[#8B7D6B] text-[#F5F5F5] p-3 rounded-lg shadow-md hover:bg-[#6B5E4C] transition duration-300 transform hover:scale-105 font-semibold text-lg">Solicitar Asesoría</button>
+          </form>
+          <div id="form-success" class="mt-4 text-green-600 hidden">¡Gracias! Te contactaremos en breve.</div>
+          <div id="form-error" class="mt-4 text-red-600 hidden">Error al enviar. Por favor, intenta de nuevo.</div>
+        </div>
       </div>
     </section>
   </main>
